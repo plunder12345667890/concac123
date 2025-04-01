@@ -1,7 +1,7 @@
 -- discord.gg/tboyroblox
 
 
-shared.LoaderTitle = "??ng K˝ KÍnh TBoy Roblox";
+shared.LoaderTitle = "??ng K√Ω K√™nh TBoy Roblox";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -323,10 +323,10 @@ local v15 = v14:CreateWindow({
 });
 local v16 = {
     Home = v15:AddTab({
-        Title = "ThÙng Tin"
+        Title = "Th√¥ng Tin"
     }),
     Main = v15:AddTab({
-        Title = "C‡y"
+        Title = "C√†y"
     }),
     Sea = v15:AddTab({
         Title = "S? Ki?n"
@@ -335,10 +335,10 @@ local v16 = {
         Title = "V?t Ph?m"
     }),
     Setting = v15:AddTab({
-        Title = "C‡i ??t"
+        Title = "C√†i ??t"
     }),
     Status = v15:AddTab({
-        Title = "M·y Ch?"
+        Title = "M√°y Ch?"
     }),
     Stats = v15:AddTab({
         Title = "Ch? S?"
@@ -353,19 +353,19 @@ local v16 = {
         Title = "Gi?"
     }),
     Fruit = v15:AddTab({
-        Title = "Tr·i"
+        Title = "Tr√°i"
     }),
     Raid = v15:AddTab({
-        Title = "T?p KÌch"
+        Title = "T?p K√≠ch"
     }),
     Race = v15:AddTab({
         Title = "T?c"
     }),
     Shop = v15:AddTab({
-        Title = "C?a H‡ng"
+        Title = "C?a H√†ng"
     }),
     Misc = v15:AddTab({
-        Title = "Kh·c"
+        Title = "Kh√°c"
     })
 };
 local v17 = v14.Options;
@@ -2696,7 +2696,7 @@ spawn(function()
     end
 end);
 local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
-    Title = "V? KhÌ",
+    Title = "V? Kh√≠",
     Description = "",
     Values = {
         "Melee",
@@ -2742,7 +2742,7 @@ task.spawn(function()
     end
 end);
 local v49 = v16.Main:AddToggle("ToggleLevel", {
-    Title = "C‡y C?p",
+    Title = "C√†y C?p",
     Description = "",
     Default = false
 });
@@ -2802,7 +2802,7 @@ spawn(function()
     end
 end);
 local v50 = v16.Main:AddToggle("ToggleMobAura", {
-    Title = "??m Qu·i G?n",
+    Title = "??m Qu√°i G?n",
     Description = "",
     Default = false
 });
@@ -2885,7 +2885,7 @@ spawn(function()
     end
 end);
 local v52 = v16.Main:AddToggle("ToggleHakiFortress", {
-    Title = "B?t Haki M‡u Ph·o ?‡i",
+    Title = "B?t Haki M√†u Ph√°o ?√†i",
     Description = "",
     Default = false
 });
@@ -2968,9 +2968,9 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Main:AddSection("ThÙng Th?o");
+local v56 = v16.Main:AddSection("Th√¥ng Th?o");
 local v57 = v16.Main:AddDropdown("DropdownMastery", {
-    Title = "C‡y ThÙng Th?o",
+    Title = "C√†y Th√¥ng Th?o",
     Description = "",
     Values = {
         "Near Mobs"
@@ -2983,7 +2983,7 @@ v57:OnChanged(function(v249)
     TypeMastery = v249;
 end);
 local v58 = v16.Main:AddToggle("ToggleMasteryFruit", {
-    Title = "C‡y Tr·i",
+    Title = "C√†y Tr√°i",
     Description = "",
     Default = false
 });
@@ -2992,7 +2992,7 @@ v58:OnChanged(function(v250)
 end);
 v17.ToggleMasteryFruit:SetValue(false);
 local v59 = v16.Main:AddSlider("SliderHealt", {
-    Title = "M·u Qu·i",
+    Title = "M√°u Qu√°i",
     Description = "",
     Default = 20,
     Min = 0,
@@ -3094,19 +3094,19 @@ end);
 if Sea3 then
     local v484 = v16.Main:AddSection("X??ng");
     local v485 = v16.Main:AddParagraph({
-        Title = "X??ng Tr?ng Th·i",
+        Title = "X??ng Tr?ng Th√°i",
         Content = ""
     });
     spawn(function()
         pcall(function()
             while wait() do
                 local v768 = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones", "Check");
-                v485:SetDesc("M‡y CÛ: " .. tostring(v768) .. " X??ng");
+                v485:SetDesc("M√†y C√≥: " .. tostring(v768) .. " X??ng");
             end
         end);
     end);
     local v486 = v16.Main:AddToggle("ToggleBone", {
-        Title = "C‡y X??ng",
+        Title = "C√†y X??ng",
         Description = "",
         Default = false
     });
@@ -3249,28 +3249,28 @@ if Sea3 then
     end);
 end
 if Sea3 then
-    local v490 = v16.Main:AddSection("T? L?nh B·nh");
+    local v490 = v16.Main:AddSection("T? L?nh B√°nh");
     local v491 = v16.Main:AddParagraph({
-        Title = "Tr?ng Th·i NÛ Ra",
+        Title = "Tr?ng Th√°i N√≥ Ra",
         Content = ""
     });
     spawn(function()
         while wait() do
             pcall(function()
                 if (string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 88) then
-                    v491:SetDesc("CÚn: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 41) .. "");
+                    v491:SetDesc("C√≤n: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 41) .. "");
                 elseif (string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 87) then
-                    v491:SetDesc("CÚn: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 40) .. "");
+                    v491:SetDesc("C√≤n: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 40) .. "");
                 elseif (string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86) then
-                    v491:SetDesc("CÚn: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 39) .. " ");
+                    v491:SetDesc("C√≤n: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 39) .. " ");
                 else
-                    v491:SetDesc("T? L?nh B·nh : ??");
+                    v491:SetDesc("T? L?nh B√°nh : ??");
                 end
             end);
         end
     end);
     local v492 = v16.Main:AddToggle("ToggleCake", {
-        Title = "C‡y T? L?nh B·nh",
+        Title = "C√†y T? L?nh B√°nh",
         Description = "",
         Default = false
     });
@@ -3384,7 +3384,7 @@ if Sea3 then
         end
     end);
     local v495 = v16.Main:AddToggle("ToggleSpawnCake", {
-        Title = "Tri?u H?i T? L?nh B·nh",
+        Title = "Tri?u H?i T? L?nh B√°nh",
         Description = "",
         Default = true
     });
@@ -3458,7 +3458,7 @@ if Sea2 then
         end
     end);
 end
-local v60 = v16.Main:AddSection("Tr˘m");
+local v60 = v16.Main:AddSection("Tr√πm");
 if Sea1 then
     tableBoss = {
         "The Gorilla King",
@@ -3503,7 +3503,7 @@ elseif Sea3 then
     };
 end
 local v61 = v16.Main:AddDropdown("DropdownBoss", {
-    Title = "Ch?n Tr˘m",
+    Title = "Ch?n Tr√πm",
     Description = "",
     Values = tableBoss,
     Multi = false,
@@ -3514,7 +3514,7 @@ v61:OnChanged(function(v253)
     _G.SelectBoss = v253;
 end);
 local v62 = v16.Main:AddToggle("ToggleAutoFarmBoss", {
-    Title = "??m Tr˘m",
+    Title = "??m Tr√πm",
     Description = "",
     Default = false
 });
@@ -3551,7 +3551,7 @@ spawn(function()
         end
     end
 end);
-local v63 = v16.Main:AddSection("NguyÍn Li?u");
+local v63 = v16.Main:AddSection("Nguy√™n Li?u");
 if Sea1 then
     MaterialList = {
         "Scrap Metal",
@@ -3584,7 +3584,7 @@ elseif Sea3 then
     };
 end
 local v64 = v16.Main:AddDropdown("DropdownMaterial", {
-    Title = "Ch?n NguyÍn Li?u",
+    Title = "Ch?n Nguy√™n Li?u",
     Description = "",
     Values = MaterialList,
     Multi = false,
@@ -3595,7 +3595,7 @@ v64:OnChanged(function(v255)
     SelectMaterial = v255;
 end);
 local v65 = v16.Main:AddToggle("ToggleMaterial", {
-    Title = "C‡y NguyÍn Li?u",
+    Title = "C√†y Nguy√™n Li?u",
     Description = "",
     Default = false
 });
@@ -3651,16 +3651,16 @@ spawn(function()
     end
 end);
 if Sea3 then
-    local v498 = v16.Sea:AddSection("??o C·o");
+    local v498 = v16.Sea:AddSection("??o C√°o");
     local v499 = v16.Sea:AddParagraph({
-        Title = "Tr?ng Th·i ??o C·o",
+        Title = "Tr?ng Th√°i ??o C√°o",
         Content = ""
     });
     function UpdateKitsune()
         if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
-            v499:SetDesc("??o C·o : ??");
+            v499:SetDesc("??o C√°o : ??");
         else
-            v499:SetDesc("??o C·o : ??");
+            v499:SetDesc("??o C√°o : ??");
         end
     end
     spawn(function()
@@ -3671,7 +3671,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "??nh V? ??o C·o",
+        Title = "??nh V? ??o C√°o",
         Description = "",
         Default = false
     });
@@ -3715,7 +3715,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "Bay VÙ ??o C·o",
+        Title = "Bay V√¥ ??o C√°o",
         Description = "",
         Default = false
     });
@@ -3790,7 +3790,7 @@ if Sea3 then
     });
     v509:SetValue(v508);
     local v510 = v16.Sea:AddToggle("AutoFindPrehistoric", {
-        Title = "TÏm ??o Dung Nham",
+        Title = "T√¨m ??o Dung Nham",
         Description = "",
         Default = false
     });
@@ -3875,7 +3875,7 @@ if Sea3 then
             if not v513 then
                 v14:Notify({
                     Title = "Gia Bao",
-                    Content = "??o Dung Nham TÏm Th?y",
+                    Content = "??o Dung Nham T√¨m Th?y",
                     Duration = 10
                 });
                 v513 = true;
@@ -3884,7 +3884,7 @@ if Sea3 then
         end
     end);
     local v514 = v16.Sea:AddToggle("AutoFindMirage", {
-        Title = "TÏm ??o BÌ ?n",
+        Title = "T√¨m ??o B√≠ ?n",
         Description = "",
         Default = false
     });
@@ -3969,7 +3969,7 @@ if Sea3 then
             if not v513 then
                 v14:Notify({
                     Title = "Gia Bao",
-                    Content = "??o BÌ ?n TÏm Th?y",
+                    Content = "??o B√≠ ?n T√¨m Th?y",
                     Duration = 10
                 });
                 v513 = true;
@@ -3978,8 +3978,8 @@ if Sea3 then
         end
     end);
     local v515 = v16.Sea:AddToggle("AutoFindFrozen", {
-        Title = "TÏm ??o Leviathan",
-        Description = "C?n 5 Ng??i KhÙng Idk",
+        Title = "T√¨m ??o Leviathan",
+        Description = "C?n 5 Ng??i Kh√¥ng Idk",
         Default = false
     });
     v17.AutoFindFrozen:SetValue(false);
@@ -4063,7 +4063,7 @@ if Sea3 then
             if not v513 then
                 v14:Notify({
                     Title = "Gia Bao",
-                    Content = "??o Leviathan TÏm Th?y",
+                    Content = "??o Leviathan T√¨m Th?y",
                     Duration = 10
                 });
                 v513 = true;
@@ -4072,7 +4072,7 @@ if Sea3 then
         end
     end);
     local v516 = v16.Sea:AddToggle("AutoComeTiki", {
-        Title = "L·i Thuy?n V? ??o Tiki",
+        Title = "L√°i Thuy?n V? ??o Tiki",
         Description = "",
         Default = false
     });
@@ -4114,7 +4114,7 @@ if Sea3 then
         end
     end);
     local v517 = v16.Sea:AddToggle("AutoComeHydra", {
-        Title = "L·i Thuy?n V? ??o Hydra",
+        Title = "L√°i Thuy?n V? ??o Hydra",
         Description = "",
         Default = false
     });
@@ -4235,7 +4235,7 @@ if Sea3 then
         end
     });
     local v522 = v16.Sea:AddToggle("ToggleTerrorshark", {
-        Title = "??m C· M?p",
+        Title = "??m C√° M?p",
         Description = "",
         Default = false
     });
@@ -4311,7 +4311,7 @@ if Sea3 then
         end
     end);
     local v524 = v16.Sea:AddToggle("ToggleShark", {
-        Title = "??m C· Con",
+        Title = "??m C√° Con",
         Description = "",
         Default = false
     });
@@ -4353,7 +4353,7 @@ if Sea3 then
         end
     end);
     local v525 = v16.Sea:AddToggle("ToggleFishCrew", {
-        Title = "??m T‡u C·",
+        Title = "??m T√†u C√°",
         Description = "",
         Default = false
     });
@@ -4395,7 +4395,7 @@ if Sea3 then
         end
     end);
     local v526 = v16.Sea:AddToggle("ToggleShip", {
-        Title = "??m T‡u",
+        Title = "??m T√†u",
         Description = "",
         Default = false
     });
@@ -4438,7 +4438,7 @@ if Sea3 then
         end
     end);
     local v527 = v16.Sea:AddToggle("ToggleGhostShip", {
-        Title = "??m T‡u Ma",
+        Title = "??m T√†u Ma",
         Description = "",
         Default = false
     });
@@ -4561,7 +4561,7 @@ if Sea3 then
     end);
     local v528 = v16.Main:AddSection("Elite");
     local v529 = v16.Main:AddParagraph({
-        Title = "Tr?ng Th·i Elite",
+        Title = "Tr?ng Th√°i Elite",
         Content = ""
     });
     spawn(function()
@@ -4625,9 +4625,9 @@ if Sea3 then
     end);
 end
 if Sea3 then
-    local v531 = v16.Sea:AddSection("??o BÌ ?n");
+    local v531 = v16.Sea:AddSection("??o B√≠ ?n");
     local v532 = v16.Sea:AddParagraph({
-        Title = "Tr?ng Th·i",
+        Title = "Tr?ng Th√°i",
         Content = ""
     });
     task.spawn(function()
@@ -4664,7 +4664,7 @@ if Sea3 then
     spawn(function()
         pcall(function()
             while wait() do
-                v532:SetDesc("??o BÌ ?n: " .. MirageStatus .. " | Tr?ng TrÚn: " .. FullMoonStatus);
+                v532:SetDesc("??o B√≠ ?n: " .. MirageStatus .. " | Tr?ng Tr√≤n: " .. FullMoonStatus);
             end
         end);
     end);
@@ -4716,7 +4716,7 @@ spawn(function()
     end
 end);
 local v67 = v16.Sea:AddToggle("ToggleTweenGear", {
-    Title = "Bay ??n B·nh R?ng",
+    Title = "Bay ??n B√°nh R?ng",
     Description = "",
     Default = false
 });
@@ -4742,7 +4742,7 @@ spawn(function()
     end);
 end);
 local v68 = v16.Sea:AddToggle("Togglelockmoon", {
-    Title = "NhÏn Tr?ng V‡ D˘ng T?c",
+    Title = "Nh√¨n Tr?ng V√† D√πng T?c",
     Description = "",
     Default = false
 });
@@ -4923,7 +4923,7 @@ spawn(function()
     end
 end);
 local v72 = v16.ITM:AddToggle("ToggleAutoSaw", {
-    Title = "C?a C· M?p",
+    Title = "C?a C√° M?p",
     Description = "",
     Default = false
 });
@@ -5008,7 +5008,7 @@ spawn(function()
 end);
 if Sea3 then
     local v533 = v16.ITM:AddToggle("ToggleHallow", {
-        Title = "L??i H·i",
+        Title = "L??i H√°i",
         Description = "",
         Default = false
     });
@@ -5209,7 +5209,7 @@ spawn(function()
     end
 end);
 local v76 = v16.ITM:AddToggle("ToggleAutoMusketeerHat", {
-    Title = "M? LÌnh Ng? L‚m",
+    Title = "M? L√≠nh Ng? L√¢m",
     Description = "",
     Default = false
 });
@@ -5293,7 +5293,7 @@ spawn(function()
     end);
 end);
 local v77 = v16.ITM:AddToggle("ToggleAutoObservationV2", {
-    Title = "Haki Quan S·t V2",
+    Title = "Haki Quan S√°t V2",
     Description = "",
     Default = false
 });
@@ -5341,7 +5341,7 @@ spawn(function()
     end
 end);
 local v78 = v16.ITM:AddToggle("ToggleAutoRainbowHaki", {
-    Title = "Haki 7 M‡u",
+    Title = "Haki 7 M√†u",
     Description = "",
     Default = false
 });
@@ -6061,7 +6061,7 @@ spawn(function()
 end);
 if Sea2 then
     local v537 = v16.ITM:AddToggle("ToggleFactory", {
-        Title = "??m Nh‡ M·y",
+        Title = "??m Nh√† M√°y",
         Description = "",
         Default = false
     });
@@ -6188,7 +6188,7 @@ spawn(function()
 end);
 if (Sea2 or Sea3) then
     local v538 = v16.ITM:AddToggle("ToggleHakiColor", {
-        Title = "Mua M‡u Haki",
+        Title = "Mua M√†u Haki",
         Description = "",
         Default = false
     });
@@ -6236,7 +6236,7 @@ if Sea2 then
 end
 if Sea2 then
     local v540 = v16.Main:AddToggle("ToggleEvoRace", {
-        Title = "N‚ng T?c V2",
+        Title = "N√¢ng T?c V2",
         Description = "",
         Default = false
     });
@@ -6333,7 +6333,7 @@ spawn(function()
     end
 end);
 local v87 = v16.Setting:AddToggle("ToggleAutoKen", {
-    Title = "B?t Haki Quan S‚t",
+    Title = "B?t Haki Quan S√¢t",
     Description = "",
     Default = false
 });
@@ -6385,7 +6385,7 @@ end);
 local v89 = require(game.ReplicatedStorage.Util.CameraShaker);
 v89:Stop();
 local v90 = v16.Setting:AddToggle("ToggleBringMob", {
-    Title = "Gom Qu·i",
+    Title = "Gom Qu√°i",
     Description = "",
     Default = true
 });
@@ -6434,7 +6434,7 @@ spawn(function()
     end
 end);
 local v91 = v16.Setting:AddToggle("ToggleRemoveNotify", {
-    Title = "XÛa ThÙng B·o",
+    Title = "X√≥a Th√¥ng B√°o",
     Description = "",
     Default = false
 });
@@ -6452,7 +6452,7 @@ spawn(function()
     end
 end);
 local v92 = v16.Setting:AddToggle("ToggleWhite", {
-    Title = "M‡n HÏnh Tr?ng",
+    Title = "M√†n H√¨nh Tr?ng",
     Description = "",
     Default = false
 });
@@ -6465,7 +6465,7 @@ v92:OnChanged(function(v279)
     end
 end);
 v17.ToggleWhite:SetValue(false);
-local v93 = v16.Setting:AddSection("K? N?ng ThÙng Th?o");
+local v93 = v16.Setting:AddSection("K? N?ng Th√¥ng Th?o");
 local v94 = v16.Setting:AddToggle("ToggleZ", {
     Title = "K? N?ng Z",
     Description = "",
@@ -6512,8 +6512,8 @@ v98:OnChanged(function(v284)
 end);
 v17.ToggleF:SetValue(true);
 local v99 = v16.Status:AddParagraph({
-    Title = "ThÙng Tin",
-    Content = "?????????????????????\n" .. "TÍn : " .. game.Players.LocalPlayer.DisplayName .. " (@" .. game.Players.LocalPlayer.Name .. ")\n" .. "C?p : " .. game:GetService("Players").LocalPlayer.Data.Level.Value .. "\n" .. "Ti?n : " .. game:GetService("Players").LocalPlayer.Data.Beli.Value .. "\n" .. "?i?m F : " .. game:GetService("Players").LocalPlayer.Data.Fragments.Value .. "\n" .. "Ti?n Truy N„ : " .. game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value .. "\n" .. "M·u: " .. game.Players.LocalPlayer.Character.Humanoid.Health .. "/" .. game.Players.LocalPlayer.Character.Humanoid.MaxHealth .. "\n" .. "N?ng L??ng : " .. game.Players.LocalPlayer.Character.Energy.Value .. "/" .. game.Players.LocalPlayer.Character.Energy.MaxValue .. "\n" .. "T?c : " .. game:GetService("Players").LocalPlayer.Data.Race.Value .. "\n" .. "Tr·i : " .. game:GetService("Players").LocalPlayer.Data.DevilFruit.Value .. "\n" .. "?????????????????????"
+    Title = "Th√¥ng Tin",
+    Content = "?????????????????????\n" .. "T√™n : " .. game.Players.LocalPlayer.DisplayName .. " (@" .. game.Players.LocalPlayer.Name .. ")\n" .. "C?p : " .. game:GetService("Players").LocalPlayer.Data.Level.Value .. "\n" .. "Ti?n : " .. game:GetService("Players").LocalPlayer.Data.Beli.Value .. "\n" .. "?i?m F : " .. game:GetService("Players").LocalPlayer.Data.Fragments.Value .. "\n" .. "Ti?n Truy N√£ : " .. game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value .. "\n" .. "M√°u: " .. game.Players.LocalPlayer.Character.Humanoid.Health .. "/" .. game.Players.LocalPlayer.Character.Humanoid.MaxHealth .. "\n" .. "N?ng L??ng : " .. game.Players.LocalPlayer.Character.Energy.Value .. "/" .. game.Players.LocalPlayer.Character.Energy.MaxValue .. "\n" .. "T?c : " .. game:GetService("Players").LocalPlayer.Data.Race.Value .. "\n" .. "Tr√°i : " .. game:GetService("Players").LocalPlayer.Data.DevilFruit.Value .. "\n" .. "?????????????????????"
 });
 local v100 = v16.Status:AddParagraph({
     Title = "Th?i Gian",
@@ -6545,7 +6545,7 @@ spawn(function()
     end
 end);
 local v102 = v16.Status:AddParagraph({
-    Title = "Th?i Gian M·y Ch?",
+    Title = "Th?i Gian M√°y Ch?",
     Content = ""
 });
 local function v103()
@@ -6553,7 +6553,7 @@ local function v103()
     local v298 = math.floor(v297 / (60 ^ 2)) % 24 ;
     local v299 = math.floor(v297 / 60) % 60 ;
     local v300 = v297 % 60 ;
-    v102:SetDesc(string.format("%02d Ti?ng-%02d Ph˙t-%02d Gi‚y", v298, v299, v300));
+    v102:SetDesc(string.format("%02d Ti?ng-%02d Ph√∫t-%02d Gi√¢y", v298, v299, v300));
 end
 spawn(function()
     while task.wait() do
@@ -6578,7 +6578,7 @@ end);
 local v105 = v16.Status:AddInput("Input", {
     Title = "Job ID",
     Default = "",
-    Placeholder = "D·n Job ID V‡o ?‚y",
+    Placeholder = "D√°n Job ID V√†o ?√¢y",
     Numeric = false,
     Finished = false,
     Callback = function(v301)
@@ -6593,7 +6593,7 @@ v16.Status:AddButton({
     end
 });
 v16.Status:AddButton({
-    Title = "Sao ChÈp Job ID",
+    Title = "Sao Ch√©p Job ID",
     Description = "",
     Callback = function()
         setclipboard(tostring(game.JobId));
@@ -6614,7 +6614,7 @@ spawn(function()
     end
 end);
 local v107 = v16.Stats:AddToggle("ToggleMelee", {
-    Title = "N‚ng ??m",
+    Title = "N√¢ng ??m",
     Description = "",
     Default = false
 });
@@ -6623,7 +6623,7 @@ v107:OnChanged(function(v303)
 end);
 v17.ToggleMelee:SetValue(false);
 local v108 = v16.Stats:AddToggle("ToggleDe", {
-    Title = "N‚ng M·u",
+    Title = "N√¢ng M√°u",
     Description = "",
     Default = false
 });
@@ -6632,7 +6632,7 @@ v108:OnChanged(function(v304)
 end);
 v17.ToggleDe:SetValue(false);
 local v109 = v16.Stats:AddToggle("ToggleSword", {
-    Title = "N‚ng Ki?m",
+    Title = "N√¢ng Ki?m",
     Description = "",
     Default = false
 });
@@ -6641,7 +6641,7 @@ v109:OnChanged(function(v305)
 end);
 v17.ToggleSword:SetValue(false);
 local v110 = v16.Stats:AddToggle("ToggleGun", {
-    Title = "N‚ng S˙ng",
+    Title = "N√¢ng S√∫ng",
     Description = "",
     Default = false
 });
@@ -6650,7 +6650,7 @@ v110:OnChanged(function(v306)
 end);
 v17.ToggleGun:SetValue(false);
 local v111 = v16.Stats:AddToggle("ToggleFruit", {
-    Title = "N‚ng Tr·i",
+    Title = "N√¢ng Tr√°i",
     Description = "",
     Default = false
 });
@@ -6769,9 +6769,9 @@ spawn(function()
         end
     end
 end);
-local v56 = v16.Player:AddSection("Kh·c");
+local v56 = v16.Player:AddSection("Kh√°c");
 local v115 = v16.Player:AddToggle("ToggleNoClip", {
-    Title = "?i XuyÍn T??ng",
+    Title = "?i Xuy√™n T??ng",
     Description = "",
     Default = true
 });
@@ -6793,7 +6793,7 @@ spawn(function()
     end);
 end);
 local v116 = v16.Player:AddToggle("ToggleWalkonWater", {
-    Title = "?i TrÍn N??c",
+    Title = "?i Tr√™n N??c",
     Description = "",
     Default = true
 });
@@ -7253,7 +7253,7 @@ _G.PermanentFruit = "Dragon-Dragon";
 _G.AutoBuyFruitSniper = false;
 _G.AutoSwitchPermanentFruit = false;
 local v123 = v16.Fruit:AddDropdown("DropdownFruit", {
-    Title = "Ch?n Tr·i",
+    Title = "Ch?n Tr√°i",
     Description = "",
     Values = Table_DevilFruitSniper,
     Multi = false,
@@ -7264,7 +7264,7 @@ v123:OnChanged(function(v337)
     _G.SelectFruit = v337;
 end);
 local v111 = v16.Fruit:AddToggle("ToggleFruit", {
-    Title = "Mua Tr·i Ch?n",
+    Title = "Mua Tr√°i Ch?n",
     Description = "",
     Default = false
 });
@@ -7280,7 +7280,7 @@ v111:OnChanged(function(v338)
 end);
 v17.ToggleFruit:SetValue(false);
 local v124 = v16.Fruit:AddDropdown("DropdownPermanentFruit", {
-    Title = "Ch?n Tr·i V?nh Vi?n",
+    Title = "Ch?n Tr√°i V?nh Vi?n",
     Description = "",
     Values = Table_DevilFruitSniper,
     Multi = false,
@@ -7291,7 +7291,7 @@ v124:OnChanged(function(v339)
     _G.PermanentFruit = v339;
 end);
 local v125 = v16.Fruit:AddToggle("TogglePermanentFruit", {
-    Title = "??i Tr·i V?nh Vi?n",
+    Title = "??i Tr√°i V?nh Vi?n",
     Description = "",
     Default = false
 });
@@ -7310,7 +7310,7 @@ v125:OnChanged(function(v340)
 end);
 v17.TogglePermanentFruit:SetValue(false);
 local v126 = v16.Fruit:AddToggle("ToggleStore", {
-    Title = "L?u Tr·i",
+    Title = "L?u Tr√°i",
     Description = "",
     Default = false
 });
@@ -7432,7 +7432,7 @@ spawn(function()
     end
 end);
 local v127 = v16.Fruit:AddToggle("ToggleRandomFruit", {
-    Title = "Random Tr·i",
+    Title = "Random Tr√°i",
     Description = "",
     Default = false
 });
@@ -7450,7 +7450,7 @@ spawn(function()
     end);
 end);
 local v128 = v16.Fruit:AddToggle("ToggleCollectTP", {
-    Title = "Bay ??n Tr·i",
+    Title = "Bay ??n Tr√°i",
     Description = "",
     Default = false
 });
@@ -7470,7 +7470,7 @@ spawn(function()
     end
 end);
 local v129 = v16.Fruit:AddToggle("ToggleCollect", {
-    Title = "D?ch Chuy?n ??n Tr·i",
+    Title = "D?ch Chuy?n ??n Tr√°i",
     Description = "",
     Default = false
 });
@@ -7501,7 +7501,7 @@ v130:OnChanged(function(v345)
 end);
 v17.ToggleEspPlayer:SetValue(false);
 local v131 = v16.Fruit:AddToggle("ToggleEspFruit", {
-    Title = "Tr·i",
+    Title = "Tr√°i",
     Description = "",
     Default = false
 });
@@ -7556,7 +7556,7 @@ spawn(function()
     end
 end);
 local v134 = v16.Fruit:AddToggle("ToggleEspRealFruit", {
-    Title = "Tr·i D?a Kh?m T·o",
+    Title = "Tr√°i D?a Kh?m T√°o",
     Description = "",
     Default = false
 });
@@ -7655,7 +7655,7 @@ function UpdateRealFruitEsp()
     end
 end
 local v135 = v16.Fruit:AddToggle("ToggleIslandMirageEsp", {
-    Title = "??o BÌ ?n",
+    Title = "??o B√≠ ?n",
     Description = "",
     Default = false
 });
@@ -7791,7 +7791,7 @@ spawn(function()
     end
 end);
 local v140 = v16.Raid:AddToggle("ToggleNextIsland", {
-    Title = "??m Qu·i Raid+Bay ??n ??o",
+    Title = "??m Qu√°i Raid+Bay ??n ??o",
     Description = "",
     Default = false
 });
@@ -7866,7 +7866,7 @@ spawn(function()
     end
 end);
 local v142 = v16.Raid:AddToggle("ToggleGetFruit", {
-    Title = "L?y Tr·i D??i 1 Tri?u",
+    Title = "L?y Tr√°i D??i 1 Tri?u",
     Description = "",
     Default = false
 });
@@ -7968,7 +7968,7 @@ spawn(function()
 end);
 if Sea2 then
     v16.Raid:AddButton({
-        Title = "Bay ??n Ch? T?p KÌch",
+        Title = "Bay ??n Ch? T?p K√≠ch",
         Description = "",
         Callback = function()
             Tween2(CFrame.new(- 6438.73535, 250.645355, - 4501.50684));
@@ -7976,7 +7976,7 @@ if Sea2 then
     });
 elseif Sea3 then
     v16.Raid:AddButton({
-        Title = "Bay ??n Ch? T?p KÌch",
+        Title = "Bay ??n Ch? T?p K√≠ch",
         Description = "",
         Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(- 5075.50927734375, 314.5155029296875, - 3150.0224609375));
@@ -7984,9 +7984,9 @@ elseif Sea3 then
         end
     });
 end
-local v56 = v16.Raid:AddSection("T?p KÌch Law");
+local v56 = v16.Raid:AddSection("T?p K√≠ch Law");
 local v143 = v16.Raid:AddToggle("ToggleLaw", {
-    Title = "Mua Chip V‡ ??m Law",
+    Title = "Mua Chip V√† ??m Law",
     Description = "",
     Default = false
 });
@@ -8084,7 +8084,7 @@ v16.Race:AddButton({
     end
 });
 local v144 = v16.Race:AddToggle("ToggleHumanandghoul", {
-    Title = "Ho‡n Th‡nh ?i [Human/Ghoul]",
+    Title = "Ho√†n Th√†nh ?i [Human/Ghoul]",
     Description = "",
     Default = false
 });
@@ -8093,7 +8093,7 @@ v144:OnChanged(function(v361)
 end);
 v17.ToggleHumanandghoul:SetValue(false);
 local v145 = v16.Race:AddToggle("ToggleAutotrial", {
-    Title = "Ho‡n Th‡nh ?i",
+    Title = "Ho√†n Th√†nh ?i",
     Description = "",
     Default = false
 });
@@ -8252,7 +8252,7 @@ spawn(function()
 end);
 local v56 = v16.Race:AddSection("Hu?n Luy?n");
 local v147 = v16.Race:AddToggle("ToggleFarmRace", {
-    Title = "C‡y Luy?n T?c",
+    Title = "C√†y Luy?n T?c",
     Description = "",
     Default = false
 });
@@ -8317,7 +8317,7 @@ v16.Shop:AddButton({
     end
 });
 v16.Shop:AddButton({
-    Title = "Haki Quan S·t",
+    Title = "Haki Quan S√°t",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk", "Buy");
@@ -8394,7 +8394,7 @@ v16.Shop:AddButton({
         game.ReplicatedStorage.Remotes.CommF_:InvokeServer("ThunderGodTalk");
     end
 });
-local v56 = v16.Shop:AddSection("Vı");
+local v56 = v16.Shop:AddSection("V√µ");
 v16.Shop:AddButton({
     Title = "Black Leg",
     Description = "",
@@ -8474,7 +8474,7 @@ v16.Shop:AddButton({
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt");
     end
 });
-local v56 = v16.Shop:AddSection("Kh·c");
+local v56 = v16.Shop:AddSection("Kh√°c");
 v16.Shop:AddButton({
     Title = "??i Ch? S?",
     Description = "",
@@ -8536,14 +8536,14 @@ v16.Shop:AddButton({
     end
 });
 v16.Misc:AddButton({
-    Title = "Tham Gia M·y Ch? L?i",
+    Title = "Tham Gia M√°y Ch? L?i",
     Description = "",
     Callback = function()
         game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer);
     end
 });
 v16.Misc:AddButton({
-    Title = "??i M·y Ch?",
+    Title = "??i M√°y Ch?",
     Description = "",
     Callback = function()
         Hop();
@@ -8617,7 +8617,7 @@ v16.Misc:AddButton({
     end
 });
 v16.Misc:AddButton({
-    Title = "H?i Qu‚n",
+    Title = "H?i Qu√¢n",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
@@ -8701,9 +8701,9 @@ v16.Misc:AddButton({
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true;
     end
 });
-local v56 = v16.Misc:AddSection("Kh·c");
+local v56 = v16.Misc:AddSection("Kh√°c");
 local v151 = v16.Misc:AddToggle("ToggleRejoin", {
-    Title = "Tham Gia M·y Ch? L?i",
+    Title = "Tham Gia M√°y Ch? L?i",
     Description = "",
     Default = true
 });
@@ -8743,7 +8743,7 @@ local function v152()
     v382.FogEnd = 100000;
 end
 v16.Misc:AddButton({
-    Title = "XÛa S??ng M˘",
+    Title = "X√≥a S??ng M√π",
     Description = "",
     Callback = function()
         v152();
@@ -8806,7 +8806,7 @@ spawn(function()
 end);
 if Sea3 then
     local v561 = v16.Sea:AddParagraph({
-        Title = "Tr?ng Th·i Chip Leviathan",
+        Title = "Tr?ng Th√°i Chip Leviathan",
         Content = ""
     });
     spawn(function()
@@ -8844,7 +8844,7 @@ spawn(function()
 end);
 local v158 = v16.Sea:AddToggle("ToggleReceiveQuest", {
     Title = "Nh?n Nhi?m V? L?a ??",
-    Description = "B?t LÍn 1 L?n L‡ Nh?n 1 Nh?n N?a ThÏ T?t B?t L?i",
+    Description = "B?t L√™n 1 L?n L√† Nh?n 1 Nh?n N?a Th√¨ T?t B?t L?i",
     Default = false
 });
 v158:OnChanged(function(v388)
@@ -8873,7 +8873,7 @@ v158:OnChanged(function(v388)
     end
 end);
 local v159 = v16.Sea:AddParagraph({
-    Title = "Tr?ng Th·i Nhi?m V? L?a ??",
+    Title = "Tr?ng Th√°i Nhi?m V? L?a ??",
     Content = ""
 });
 spawn(function()
@@ -8902,7 +8902,7 @@ spawn(function()
     end);
 end);
 local v160 = v16.Sea:AddToggle("ToggleHydraTree", {
-    Title = "Ph· C‚y ? ??o Hydra",
+    Title = "Ph√° C√¢y ? ??o Hydra",
     Description = "",
     Default = false
 });
@@ -9019,7 +9019,7 @@ spawn(function()
     end
 end);
 local v165 = v16.Sea:AddToggle("ToggleWhiteBelt", {
-    Title = "C‡y ?ai Tr?ng",
+    Title = "C√†y ?ai Tr?ng",
     Description = "",
     Default = false
 });
@@ -9048,7 +9048,7 @@ v165:OnChanged(function(v397)
     end
 end);
 local v166 = v16.Sea:AddParagraph({
-    Title = "Ho‡n Th‡nh ?i Draco V4 (S?m Ra)",
+    Title = "Ho√†n Th√†nh ?i Draco V4 (S?m Ra)",
     Content = ""
 });
 local v167 = v16.Sea:AddToggle("ToggleTrialTeleport", {
@@ -9071,7 +9071,7 @@ spawn(function()
 end);
 local v168 = v16.Sea:AddSection("??o Dung Nham");
 local v169 = v16.Sea:AddParagraph({
-    Title = "Tr?ng Th·i ??o Dung Nham",
+    Title = "Tr?ng Th√°i ??o Dung Nham",
     Content = ""
 });
 spawn(function()
@@ -9115,7 +9115,7 @@ spawn(function()
     end
 end);
 local v171 = v16.Sea:AddToggle("ToggleDefendVolcano", {
-    Title = "PhÚng Th?",
+    Title = "Ph√≤ng Th?",
     Description = "",
     Default = false
 });
@@ -9123,7 +9123,7 @@ v171:OnChanged(function(v401)
     _G.AutoDefendVolcano = v401;
 end);
 local v107 = v16.Sea:AddToggle("ToggleMelee", {
-    Title = "D˘ng Melee",
+    Title = "D√πng Melee",
     Description = "",
     Default = false
 });
@@ -9131,7 +9131,7 @@ v107:OnChanged(function(v402)
     _G.UseMelee = v402;
 end);
 local v109 = v16.Sea:AddToggle("ToggleSword", {
-    Title = "D˘ng Sword",
+    Title = "D√πng Sword",
     Description = "",
     Default = false
 });
@@ -9139,7 +9139,7 @@ v109:OnChanged(function(v403)
     _G.UseSword = v403;
 end);
 local v110 = v16.Sea:AddToggle("ToggleGun", {
-    Title = "D˘ng Gun",
+    Title = "D√πng Gun",
     Description = "",
     Default = false
 });
